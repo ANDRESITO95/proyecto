@@ -1,0 +1,240 @@
+
+*{
+    font-family: Helvetica;
+}
+body{
+    background-color: #e6f7ff;
+}
+.contenedorprincipal{
+    width: 90%;
+    background-color: #e6f7ff ;
+    margin: 0 auto;/*para alejar y centrar al centro*/
+}
+/*CABECERA*/
+header {   
+     padding:5px;
+     margin: 0 auto;
+     overflow: hidden;
+     background-image: repeating-radial-gradient(#b3ffff , #80bfff 10%, #e6ccff 15%); 
+     
+     /*   
+     repeating-radial-gradient diferente estilo de colores
+     background-image: url(https://i.ibb.co/zGHg1MZ/paisa.jpg); 
+     background-repeat: no-repeat;
+     background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+     otro dato:
+     
+     */
+      }
+      header .mini{
+          display: inline;
+          float: left;
+          padding: 10px;
+      }
+      header img:hover{
+          background-color:#1affd1;
+      }
+      .minih1{
+          padding-top: 40px;
+         color:  palevioletred;
+         -webkit-text-stroke: 2px  black;
+            
+      }
+      /*NAVEGADOR*/
+      nav{
+          background-color: black;
+          overflow: hidden; /*si los elemento son flotantes nos encargarmos siempre de cubrirlo*/
+        
+        }
+            ul{
+                list-style-type: none;
+            }
+      nav ul li {
+          display: inline; /*los elementos se posicionan uno al alado del otro en linea*/
+          float: left ; /*los elementos flotan hacia la derecha*/
+      }
+      nav ul li a{
+          display: block; /*los elementos se posicionan en bloques*/
+          color: white;
+          text-decoration: none; /*los enlaces no se veran subrayados*/
+          padding-left: 30px;
+          padding-bottom: 20px;
+          padding-right: 30px;
+      }
+      nav ul li a:hover{
+          background-color:#0066ff;
+          cursor: pointer;
+          
+      }
+      .imgzapa{ /*NOTA ES MEJOR DARLE EL 100% A LAS IMAGENES QUE VAN DENTRO DE OTRA CLASE
+        EN ESTE CASO VAN DENTRO DE LA SECTION*/
+        width: 100%;
+        height: 300px;
+    }
+      
+      /*articulos todos*/
+      section h1 {    
+        font-size: 2.1em; /*Debido a la configuracion inicial. Debemos hacer más grandes a los h1*/ 
+        color:  black;
+         -webkit-text-stroke: 1px  yellow;
+        } 
+section h2 {  
+        font-size: 1.3em; /*Debido a la configuracion inicial. Debemos hacer más grandes a los h2*/ 
+        color:  black;
+         -webkit-text-stroke: 1px  green;
+        } 
+        
+      article{
+          width: 40%;
+          padding: 5%;
+          overflow: hidden;
+      }
+      
+      article img:hover{  /*AUMENTO DE ARTICULO*/
+        outline: 1px solid gray;
+        position: relative;
+        box-shadow: 10px 10px 5px grey;
+        cursor: pointer;
+      }
+      section{
+          overflow: hidden; /*los elementos son flotantes, hay que cubrirlos*/
+      }
+      section article{   
+        display: inline; /*los elementos  se posicionaran uno al lado de otro*/    
+        float: left; /*los elementos flotaran, hacia la izquierda*/
+        } 
+        /*ASIDE unico*/
+        
+        aside{
+            
+            width: 30%;
+            padding: 15px;
+        }
+        .imgmodelo{  /*NOTA ES MEJOR DARLE EL 100% A LAS IMAGENES QUE VAN DENTRO DE OTRA CLASE
+            EN ESTE CASO VAN DENTRO DEL ASIDE*/
+            width: 100%;
+            height: 500px;
+        }
+        #sectiongrande{
+            width: 60%;
+            float: left;
+        }
+        #aaside{
+            float: right;
+        }
+        .borrando{
+            clear: both;
+        }
+        h5{
+            color: white;
+            background-color: black;
+            width: 110px;
+            float: right;
+            padding: 10px;
+        }
+        footer{
+            background-color:#808080;
+            padding: 1px;
+            overflow: hidden;
+            
+        }
+        
+        .footerr h2{
+            display: inline;
+            float: left;
+            padding-right: 15px;
+            padding-left: 15px;
+            color: black;
+            font-size: 0.9em;
+
+        }
+        .footerr h2:hover{
+        cursor: pointer;
+        color: blue;
+        }
+        .imgfooter{
+            width: 20px;
+        }
+       .vide{
+           width: 100%;
+           height: 260px;
+       }
+        
+       /* primero moviles   */
+       @media only screen and (max-width: 768px){
+        .contenedorprincipal{
+            width: 100%;
+        }
+        .mini{
+            width: 100%;
+            height: 300px;
+        }
+        .minih1{
+            padding-top: 40px;
+            font-size: 1.3em;
+           color:  palevioletred;
+           -webkit-text-stroke: 2px  black;
+              
+        }
+        #sectiongrande{
+            width: 100%;
+        }
+        #aaside{
+            width: 95%;
+        }
+        .vide{
+            width: 85%;
+            height: 300px;
+        }
+        .footerr h2{
+            width: 100%;
+            text-align: center;
+        }
+        .imgmodelo{
+            height: 700px;
+        }
+        section h1 {  
+            text-align: center; 
+            font-size: 2.1em; /*Debido a la configuracion inicial. Debemos hacer más grandes a los h1*/ 
+            color:  black;
+             -webkit-text-stroke: 1px  yellow;
+            }
+            article{
+                width: 100%;
+            }
+            .imgzapa{
+                width: 100%;
+                height: 500px;
+            }
+    }
+    
+    /*PARA TABLETS*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px ){
+        .contenedorprincipal{
+            width: 95%;
+        }
+        #sectiongrande{
+            width: 90%;
+        }
+        #aaside{
+            width: 90%;
+        }
+        .vide{
+            width: 90%;
+            height: 300px;
+        }
+        .imgmodelocambio{
+            overflow: hidden;
+            width: 95%;
+        }
+        .imgmodelocambio .imgmodelo{
+            display: inline;
+            float: left;
+        }
+        .imgmodelo{
+            width:  45%;
+            height: 400px;
+            padding: 2px;
+        }
+
+      } 

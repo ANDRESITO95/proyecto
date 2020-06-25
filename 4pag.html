@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/4pag.css" type="text/css">
+    <title>Registro</title>
+    <link rel="shortcut icon" type="image/x-icon" href=".\img_zapatos_logo\L_iconos\ICONO.ico">
+    <!--creando el icono --- es el tipo de imagen ----- carpeta de la imagen/y el nombre favicon.ico --> 
+    <script type="text/javascript" src="js/4pag.js"></script>
+</head>
+<body> 
+    <div class="Cprincipal">
+    <header>
+        <img src=".\img_zapatos_logo\Logos\LOGO.jpg" alt="Logo_TIZAJAB" class="mini">
+        <h1 class="mini, minih1">ABRIMOS TIENDA DE ZAPATOS TIZAJAB</h1>
+    </header>
+   </div>
+
+    <nav>
+        <div class="Cprincipal">
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="html.html">Hombres</a></li>
+            <li><a target="_blank" href="3.pag.html">Mujeres</a></li>
+            <li><a href="2pag.html">Contactanos</a></li>
+            <li><a target="_blank" href="videos/tizajab.mp4">Videos</a></li>
+        </ul>
+    </div>
+    
+    </nav>
+    <!--INICIANDO LA SECTION-->
+    <div class="Cprincipal">
+
+    <section>
+        <article>
+            <form action="">
+                <fieldset><legend>Registrarme</legend>
+                    <h5>Completar todos los datos que se le pide</h5>
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre"  maxlength="100"></td>
+                        <td><label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido"  maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tipodocumento">Tipo de documento</label>
+                            <input type="text" name="tipodocumento" id="tipodocumento" placeholder="[DUI]  [NIT]  [DNI]" maxlength="20"></td>
+                        <td><label for="numerodocumento">Numero de documento</label>
+                            <input type="text" name="numerodocumento" id="numerodocumento" placeholder="00000000-0" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fecnacimiento">Fecha de Nacimiento</label>
+                            <input type="date" name="fecnacimiento" id="fecnacimiento" maxlength="12"></td>
+                        <td><label for="usu">Usuario</label>
+                            <input type="text" name="usu" id="usu" placeholder="Usuario"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contra">Contraseña</label>
+                            <input type="password" name="contra" id="contra"></td>
+                        <td><label for="repcontrasena">Repetir Contraseña</label>
+                            <input type="password" name="repcontrasena" id="repcontrasena" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="example@hotmail.com"></td>
+                        <td><label for="celular">Celular</label>
+                            <input type="email" name="celular" id="celular" placeholder="0000-0000" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <select>
+                            <option id="pais">[Seleccion un pais]</option>
+                            <option> Salvadoreña</option>
+                            <option>Nicaraguense</option>
+                            <option>Hondureña</option>
+                            <option>Estadounidense</option>
+                            <option>Panameño</option>
+                            <option>Guatemalteco</option>
+                            <option>Brasileño</option>
+                            <option>Argentino</option>
+                            <option>Mexicanos</option>
+                           </select>
+                        </td>
+
+                        <td>
+                            <select>
+                             <option id="genero">[Genero]</option>
+                             <option>Masculino</option>
+                             <option>Femenino</option>
+                             <option>Otros</option>
+                            </select>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td ><input type="submit" value="Registrarme" onclick="valida_envia()" id="registrarme" ></td>
+                    </tr>
+                </table>
+        </fieldset>
+            </form>
+
+            <form action="">
+                <fieldset><legend>Ingresar con cuenta</legend>
+                    <h5>Completar todos los datos que se le pide</h5>
+                <table>
+                    <tr>
+                        <td><label for="usuario">Usuario</label>
+                            <input type="text" name="usuario" id="usuario"></td>
+                        <td><label for="contrasena">Contraseña</label>
+                            <input type="password" name="contrasena" id="contrasena"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td ><input type="submit" value="Ingresar" id="ingresar"></td>
+                    </tr>
+                </table>
+        </fieldset>
+            </form>
+
+        </article>
+
+    </section>
+</div>
+    
+
+
+
+    <footer>
+        <footer class="footerr3">
+            <a id="conctact">
+            <a target="_blank" href=" https://www.facebook.com/"> <h2>Facebook</h2> </a>
+            <a target="_blank" href=" https://twitter.com/explore"><h2>Twiter</h2> </a>
+           <a target="_blank" href="https://www.youtube.com/"><h2>Youtube</h2> </a>
+           <a target="_blank" href="https://www.instagram.com/"><h2>instagram</h2> </a>
+            </a>
+            <h2>WhatsApp  2000-2000</h2>
+        </footer>
+        <h6>Derechos reservador del autor. Estudiantes</h6> 
+    </footer>
+
+</body>
+</html>

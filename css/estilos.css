@@ -1,0 +1,155 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  body {
+    background: grey;
+  }
+  
+  .container {
+    width: 80%;
+   
+  }
+  
+  #main {
+    background: white;
+  }
+  
+  #main h1 {
+    padding: 10px;
+  }
+  
+  #main hr {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #contenido {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  section article {
+    padding: 10px;
+  }
+  
+  article p {
+    font-size: 12px;
+    text-align: justify;
+    color: #646464;
+  }
+  
+  article h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  article h1 a {
+    text-decoration: none;
+    color: #535353;
+  }
+  
+  article > a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  article > img {
+    width: 100%;
+  }
+  
+  article:hover {
+    outline: 1px solid gray;
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+  }
+  
+  #principales {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  /* Barra de navegacion */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  header {
+    background-color: white;
+  }
+  
+  header img {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+  }
+  
+  footer {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Media queries */
+  
+  @media only screen and (max-width: 1200px) {
+    #contenido {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  
+    #principales {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #contenido {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto;
+    }
+  
+    #principales {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }

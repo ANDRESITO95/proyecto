@@ -1,0 +1,163 @@
+*{
+    font-family: Helvetica;
+}
+body{
+    background-color:  #e6e6ff;
+    background-image: linear-gradient(#9999ff, #e6e6ff);
+}
+.Cprincipal{
+    width: 90%;
+    background-color: #e6e6ff;
+    background-image: linear-gradient(#9999ff, #e6e6ff);
+    
+     
+    margin: 0 auto;/*para alejar y centrar al centro*/
+}
+
+/*CABECERA*/
+header {   
+     padding:5px;
+     margin: 0 auto;
+     overflow: hidden;
+     background-color: #cccccc;
+  background-image: linear-gradient(#9999ff, #e6e6ff);
+     
+     /*   
+     repeating-radial-gradient diferente estilo de colores
+     background-image: url(https://i.ibb.co/zGHg1MZ/paisa.jpg); 
+     background-repeat: no-repeat;
+     background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+     otro dato:
+     
+     */
+      }
+      header .mini{
+          display: inline;
+          float: left;
+          padding: 10px;
+      }
+      .minih1{
+          padding-top: 40px;
+         color:  palevioletred;
+         -webkit-text-stroke: 2px  black;
+         
+            
+      }
+      /*NAVEGADOR*/
+      nav{
+          background-color:#331a00;
+          overflow: hidden; /*si los elemento son flotantes nos encargarmos siempre de cubrirlo*/
+        
+        }
+            ul{
+                list-style-type: none;
+            }
+      nav ul li {
+          display: inline; /*los elementos se posicionan uno al alado del otro en linea*/
+          float: left ; /*los elementos flotan hacia la derecha*/
+      }
+      nav ul li a{
+          display: block; /*los elementos se posicionan en bloques*/
+          color: white;
+          text-decoration: none; /*los enlaces no se veran subrayados*/
+          padding-left: 30px;
+          padding-bottom: 20px;
+          padding-right: 30px;
+      }
+      nav ul li a:hover{
+          background-color: #ff3333;
+          cursor: pointer;
+      }
+
+      
+      /*articulos todos*/
+      form{
+        width: 50%;
+        background-color:#e6e6ff;
+        background-image: linear-gradient(#9999ff, #e6e6ff);
+        overflow: hidden; /*para que floten los articulos y hay que cubrirlos*/
+    }
+    
+
+      footer{
+        background-color:#808080;
+        padding: 1px;
+        overflow: hidden;
+        
+    }
+    
+    .footerr3 h2{
+        color: black;
+        display: inline;
+        float: left;
+        padding-right: 15px;
+        padding-left: 15px;
+    font-size: 0.9em;
+    }
+    .footerr3 h2:hover{
+        color: blue;
+        cursor: pointer;
+    }
+    h6{
+        float: right;
+    }
+    article{
+        overflow: hidden;/*los eleemntos son flotantes hay que cubirlos*/
+        width: 100%;
+        background-color: #e6e6ff;
+        background-image: linear-gradient(#9999ff, #e6e6ff);
+       
+    }
+    article form{
+        display: inline; /*los article se posicionan uno al lado de otro*/
+        float: left; /*los elementos article floatan hacia la derecha*/
+        
+    }
+    input,select{
+        width: 100%;
+        padding: 6px;
+        height: 30px;
+    }
+    
+    td{
+        padding: 15px;
+    }
+    legend{
+        font-size: 1.9em;
+        text-align: center;
+    }
+     /* primero moviles   */
+     @media only screen and (max-width: 768px){
+         form{
+             width: 100%;
+         }
+         .footerr3 h2{
+            width: 100%;
+            text-align: center;
+        }
+        .contenedorprincipal{
+            width: 100%;
+        }
+        .mini{
+            width: 100%;
+            height: 300px;
+        }
+        .minih1{
+            padding-top: 40px;
+            font-size: 1.2em;
+              
+        }
+
+     }
+
+     /*PARA TABLETS*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px ){
+        .mini{
+            width: 100%;
+            height: 300px;
+        }
+        .minih1{
+            padding-top: 40px;
+            font-size: 1.4em;
+        }
+    }

@@ -1,0 +1,137 @@
+*{
+    font-family: Helvetica;
+}
+body{
+    background-color:  burlywood;
+}
+.conprincipal{
+    width: 90%;
+    background-color: burlywood;
+    margin: 0 auto;/*para alejar y centrar al centro*/
+}
+
+/*CABECERA*/
+header {   
+     padding:5px;
+     margin: 0 auto;
+     overflow: hidden;
+     background-color: #cccccc;
+  background-image: linear-gradient(#ff4d4d, #ffff80);
+     
+     /*   
+     repeating-radial-gradient diferente estilo de colores
+     background-image: url(https://i.ibb.co/zGHg1MZ/paisa.jpg); 
+     background-repeat: no-repeat;
+     background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+     otro dato:
+     
+     */
+      }
+      header .mini{
+          display: inline;
+          float: left;
+          padding: 10px;
+      }
+      .minih1{
+          padding-top: 40px;
+         color:  palevioletred;
+         -webkit-text-stroke: 2px  black;
+         
+            
+      }
+      /*NAVEGADOR*/
+      nav{
+          background-color:#331a00;
+          overflow: hidden; /*si los elemento son flotantes nos encargarmos siempre de cubrirlo*/
+        
+        }
+            ul{
+                list-style-type: none;
+            }
+      nav ul li {
+          display: inline; /*los elementos se posicionan uno al alado del otro en linea*/
+          float: left ; /*los elementos flotan hacia la derecha*/
+      }
+      nav ul li a{
+          display: block; /*los elementos se posicionan en bloques*/
+          color: white;
+          text-decoration: none; /*los enlaces no se veran subrayados*/
+          padding-left: 30px;
+          padding-bottom: 20px;
+          padding-right: 30px;
+      }
+      nav ul li a:hover{
+          background-color: #ff3333;
+          cursor: pointer;
+      }
+      .imgzapa{ /*NOTA ES MEJOR DARLE EL 100% A LAS IMAGENES QUE VAN DENTRO DE OTRA CLASE
+        EN ESTE CASO VAN DENTRO DE LA SECTION*/
+        width: 100%;
+        height: 300px;
+    }
+      
+      /*articulos todos*/
+      article{
+          background-color: burlywood;
+          border-color: black   ;
+          padding: 50px;
+
+      }
+    
+
+      footer{
+        background-color:#808080;
+        padding: 1px;
+        overflow: hidden;
+        
+    }
+    
+    .footerr2 h2{
+        color: black;
+        display: inline;
+        float: left;
+        padding-right: 15px;
+        padding-left: 15px;
+    font-size: 0.9em;
+    }
+    .footerr2 h2:hover{
+        color: blue;
+        cursor: pointer;
+    }
+    h6{
+        float: right;
+    }
+
+     /* primero moviles  */
+     @media only screen and (max-width: 768px){
+        .conprincipal{
+            width: 100%;
+        }
+        .mini{
+            width: 100%;
+            height: 300px;
+        }
+        .minih1{
+            padding-top: 40px;
+            font-size: 1.3em;
+        }
+        section{
+            width: 100%;
+        }
+        .footerr2 h2{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+     /*PARA TABLETS*/
+     @media only screen and (min-width: 768px) and (max-width: 1024px ){
+        .mini{
+            width: 100%;
+            height: 300px;
+        }
+        .minih1{
+            padding-top: 40px;
+            font-size: 1.3em;
+        }
+     }
